@@ -7,7 +7,7 @@ header {
   place-content: center;
 }
 section {
-  height: 80%;
+  height: 75%;
 }
 .contentImg{
   display: flex;
@@ -21,13 +21,15 @@ img{
   object-fit: cover;
   object-position: center;
   border-radius: 30px;
-  width: 6%;
+  width: 5%;
   transition: all 1s;
+  height: 100%;
 }
 .activa{
   width: 75%;
   object-fit: cover;
   object-position: top;
+  height: 100%;
 }
 footer{
   display: grid;
