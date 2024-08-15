@@ -44,22 +44,38 @@ header h1{
   height: 100px;
 }
 .lista{
-  width: 80%;
+  width: 90%;
 }
 .lista li{
-  padding-left: 10px;
   color: rgb(151, 158, 158);
   margin: 10px;
 }
 .lista a{
   color: white;
   text-decoration: none;
+  width: 100%;
 }
 .lista a:hover, .lista li:hover{
   color: rgb(224, 141, 33);
   text-decoration: none;
 }
-.lista a:active, .lista li:active{
-  transform: scale(1.1);
+footer{
+  display: grid;
+  place-content: center;
+  height: 10%;
 }
-
+.btnVolver a{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 20px;
+  width: 130px;
+  height: 40px;
+  background-color: rgb(228, 121, 21) ;
+  color: white;
+  text-decoration: none;
+}
+.btnVolver :hover{
+  transition: all 1s;
+  transform: scale(1.2);
+}

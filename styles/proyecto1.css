@@ -2,9 +2,6 @@
 
 header {
   background-color: rgb(228, 121, 21);
-  color: white;
-  display: grid;
-  place-content: center;
 }
 section {
   height: 75%;
@@ -30,25 +27,4 @@ img{
   object-fit: cover;
   object-position: top;
   height: 100%;
-}
-footer{
-  display: grid;
-  place-content: center;
-  height: 10%;
-}
-
-.btnVolver a{
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 20px;
-  width: 130px;
-  height: 40px;
-  background-color: rgb(228, 121, 21) ;
-  color: white;
-  text-decoration: none;
-}
-.btnVolver :hover{
-  transition: all 1s;
-  transform: scale(1.2);
 }
