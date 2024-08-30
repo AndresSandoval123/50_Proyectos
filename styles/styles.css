@@ -79,3 +79,7 @@ footer{
   transition: all 1s;
   transform: scale(1.2);
 }
+iframe{
+  position: absolute;
+  left: 50%;
+}

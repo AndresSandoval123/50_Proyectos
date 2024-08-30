@@ -1,0 +1,131 @@
+@import url(./styles.css);
+
+*{
+  box-sizing: border-box; /* Lo uso para que se contenga en forma de caja, de lo contrario se desbordara todo el contenido */
+}
+main{
+  background-color: rgb(73, 71, 71);
+  overflow-x: hidden; /* Elimina la posibilidad o la vista de que la pagina tiene scroll horizontal */
+}
+.contenedor{
+  background-color: antiquewhite;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 50px;
+  transform-origin: top left;
+  transition: transform 0.5s linear;
+}
+.contenedor.activo{
+  transform-origin: top left;
+  transform:rotate(-20deg);
+  transition: transform 0.5s linear;
+}
+.articulo{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 20px;
+  max-width: 1000px;
+  margin: 50px auto;
+}
+.articulo article{
+  width: 90%;
+}
+.secImg{
+  width: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+img{
+  width: 100%;
+  border-radius: 10px;
+}
+
+.circulo{
+  position: fixed;
+  border-radius: 100%;
+  width: 160px;
+  height: 160px;
+  left: -65px;
+  top: -65px;
+  background-color: rgb(2, 9, 75);
+}
+.open, .close{
+  cursor: pointer;
+}
+.open{
+  position: absolute;
+  top: 80px;
+  left: 80px;
+  font-size: 50px;
+  background-color:unset;
+  border: 0;
+  color: white;
+  display: flex;
+  transition: transform 0.5s linear;
+}
+.open.activo{
+  transform: translateX(25px) translateY(-40px);
+  transition: transform 0.5s linear;
+}
+.close{
+  display: none;
+  position: relative;
+  top: 0px;
+  left: 0px;
+  font-size: 50px;
+  background-color:unset;
+  border: 0;
+  color: white;
+  transition: transform 0.4s linear;
+}
+.close.activo{
+  display: block;
+  top: 90px;
+  left: 65px;
+  transition: transform 0.4s linear;
+  transform: rotate(20deg)
+}
+.nav{
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  height: 100px;
+  width: 170px;
+  transform: translateX(-100%);
+  transition: transform 0.4s ease-in;  
+}
+.nav.activo{
+  transform: translateX(20%);
+  transition: transform 0.4s ease-in;
+}
+.nav ul{
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction:column;
+  gap: 10px;
+}
+.nav a{
+  font-size: 25px;
+  width: 100%;
+  text-decoration: none;
+  color: white;
+}
+
+
+@media(width >= 800px){
+  .contenedor{
+    padding: 10px;
+  }
+  
+  .secImg{
+    width: 100%;
+  }
+  img{
+    width: 90%;
+  }
+}
