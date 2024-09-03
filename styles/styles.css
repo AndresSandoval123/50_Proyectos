@@ -1,9 +1,13 @@
+:root{
+  --azul: #15223C;
+  --naranja: #e08d21;
+}
 *{
   padding: 0;
   margin: 0;
 }
 body {
-  background-color: #15223C;
+  background-color: var(--azul);
 }
 main{
   height: 100vh;
@@ -11,14 +15,14 @@ main{
   flex-direction: column;
   align-items: center;
   gap: 20px;
-  font-family:Georgia, 'Times New Roman', Times, serif;
+  font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 header{
   width: 95%;
   border-radius: 10px;
   padding: 10px;
   height: 100px;
-  background-color: rgb(224, 141, 33);
+  background-color: var(--naranja);
   color: black;
   display: flex;
   align-items: center;
@@ -56,7 +60,7 @@ header h1{
   width: 100%;
 }
 .lista a:hover, .lista li:hover{
-  color: rgb(224, 141, 33);
+  color: var(--naranja);
   text-decoration: none;
 }
 footer{
@@ -71,7 +75,7 @@ footer{
   border-radius: 20px;
   width: 130px;
   height: 40px;
-  background-color: rgb(228, 121, 21) ;
+  background-color: var(--naranja);
   color: white;
   text-decoration: none;
 }
